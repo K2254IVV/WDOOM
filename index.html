@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOOM Web Mod Launcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>DOOM Web Mod Launcher</h1>
+    
+    <div class="container">
+        <div class="game-select">
+            <button onclick="loadGame('doom1')">DOOM 1</button>
+            <button onclick="loadGame('doom2')">DOOM 2</button>
+        </div>
+
+        <div class="mod-upload">
+            <h3>Загрузите моды (WAD/PK3):</h3>
+            <input type="file" id="modFile" multiple>
+            <button onclick="uploadMods()">Запустить с модами</button>
+        </div>
+
+        <div id="gameStream"></div>
+    </div>
+
+    <script src="client.js"></script>
+</body>
+</html>
